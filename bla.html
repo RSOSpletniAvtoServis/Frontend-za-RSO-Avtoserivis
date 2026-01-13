@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Prva domaca naloga</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body onload="obzagonu()">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<div class="flex-container">
+<header>
+  <h1>Spletni imenik kontaktov</h1>
+</header>
+
+<nav class="nav">
+    <input id="isci" type="text" />
+    <button onclick="poisci()">Išči v imeniku</button>
+
+<ul>
+    <li><a href="bla.html">Začetna stran</a></li>
+    <li><a href="index.html">Viri</a></li>
+</ul>
+</nav>
+
+<article class="article">
+    <table id="participant-table">
+    <tr><th>Ime</th><th>Priimek</th><th>Telefonska številka</th></tr>
+</table>
+<section id="content2">
+	<fieldset>
+		<legend>Dodaj novega človeka v telefonski imenik</legend>
+		<label for="first">Ime: </label>
+		<input id="first" type="text" name="first" autofocus />
+
+		<label for="last">Priimek:  </label>
+		<input id="last" type="text" name="last" />
+
+		<label for="role">Telefonska številka: </label>
+		<input id="role" type="text" name="role" />
+
+		<button onclick="addParticipant()">Dodaj v imenik</button>	
+	</fieldset>
+</section>
+</article>
+
+<footer>Avtor: Žan Gostič</footer>
+</div>
+
+</body>
+</html>
