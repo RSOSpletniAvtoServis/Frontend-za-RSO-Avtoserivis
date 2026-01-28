@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="stylesheet">
 </head>
-<body onload="obzagonu()">
+<body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="script.js"></script>
+<!--<script src="script.js"></script>-->
 <div class="flex-container">
 <header>
   <h1>Spletni Avto servis</h1>
@@ -17,21 +17,23 @@
 <nav class="nav">
 <div id="navigacija">
 <script type="text/javascript" src="insertlinks.js"></script>
-
 </div>
 </nav>
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3 id="naslov" name="naslov">Tukaj imate vse za avtoservis</h3>
+<h3>Dodaj ponudbo</h3>
+<form action="/index.html">
+<table><tr><td>
+  <label for="posl">Poslovalnica:</label></td><td>
+  <select id="posl" name="posl" value=""></td></tr><tr><td>
+  <label for="storitev">Storitev:</label></td><td>
+  <select id="storitev" name="storitev" value=""></td></tr></table>
+  <input type="button" value="Dodaj ponudbo" onclick="dodajPonudbo()">
+  <input type="button" value="Nazaj" onclick="nazaj()">
+</form> 
 
-
-<script src="index.js"></script>
-<script>
-
-console.log("Vloga: ",localStorage.getItem("vloga"));
-console.log("UserID: ",localStorage.getItem("userID"));
-</script>
+<script src="dodajponudbo.js"></script>
 
 
 </article>

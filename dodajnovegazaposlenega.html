@@ -22,7 +22,7 @@
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3>Registracija</h3>
+<h3>Dodaj zaposlenega</h3>
 <form action="/index.html">
 <table><tr><td>
   <label for="uname">Username:</label></td><td>
@@ -41,14 +41,15 @@
   <label for="email">Email:</label></td><td>
   <input type="text" id="email" name="email" value=""></td></tr><tr><td>
   <label for="tel">Telefon:</label></td><td>
-  <input type="text" id="tel" name="tel" value=""></td></tr><tr><td>
-  <label for="dav">Davčna številka:</label></td><td>
-  <input type="text" id="dav" name="dav" value=""></td></tr></table>
-  <input type="button" value="Registracija" onclick="registracija()">
+  <input type="text" id="tel" name="tel" value="" oninput="onTelInput()"></td></tr><tr><td>
+  <span id="tel-status" ></span></td></tr><tr><td>
+  <label for="pos">Poslovalnica:</label></td><td>
+  <select id="pos" name="pos" value=""></td></tr></table>
+  <input type="button" value="Dodaj zaposlenega" onclick="dodajzaposlenega()">
   <input type="button" value="Nazaj" onclick="nazaj()">
 </form> 
 
-<script src="registracija.js"></script>
+<script src="dodajzaposlenega.js"></script>
 
 
 </article>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RSO Spletni Avto servis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+</head>
+<body onload="obzagonu()">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<div class="flex-container">
+<header>
+  <h1>Spletni Avto servis</h1>
+</header>
+
+<nav class="nav">
+<div id="navigacija">
+<script type="text/javascript" src="insertlinks.js"></script>
+</div>
+</nav>
+
+<article class="article">
+<h2>Spletni avto servis</h2>
+<h3>Uredi vozilo</h3>
+<form action="/index.html">
+<table><tr><td>
+  <label for="stsas">Številka Šasije:</label></td><td>
+  <label id="stsas" name="stsas" value=""></td></tr><tr><td>
+  <label for="znamka">Znamka:</label></td><td>
+  <label id="znamka" name="znamka" value=""></td></tr><tr><td>
+  <label for="model">Model:</label></td><td>
+  <label id="model" name="model" value=""></td></tr><tr><td>
+  <label for="leto">Leto:</label></td><td>
+  <input type="text" id="leto" name="leto" value="" oninput="onLetoInput()"></td></tr><tr><td>
+  <span id="let-status" ></span></td></tr><tr><td>
+  <label for="km">Konska moč:</label></td><td>
+  <input type="text" id="km" name="km" value="" oninput="onKonInput()"></td></tr><tr><td>
+  <span id="kon-status" ></span></td></tr><tr><td>
+  <label for="aktiven">Aktiven:</label></td><td>
+  <input type="text" id="aktiven" name="aktiven" value=""></td></tr></table>
+  <input type="button" value="Posodobi vozilo" onclick="posodobivozilo()">
+  <input type="button" value="Nazaj" onclick="nazaj()">
+</form> 
+
+<script src="uredivozilo.js"></script>
+
+
+</article>
+
+<footer>Avtor: Žan Gostič</footer>
+</div>
+
+</body>
+</html>

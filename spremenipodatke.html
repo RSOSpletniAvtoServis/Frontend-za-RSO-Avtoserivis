@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RSO Spletni Avto servis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+</head>
+<body onload="obzagonu()">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<div class="flex-container">
+<header>
+  <h1>Spletni Avto servis</h1>
+</header>
+
+<nav class="nav">
+<div id="navigacija">
+<script type="text/javascript" src="insertlinks.js"></script>
+</div>
+</nav>
+
+<article class="article">
+<h2>Spletni avto servis</h2>
+<h3>Posodobi podatke</h3>
+<form action="/index.html">
+<table><tr><td>
+  <label for="ime">Ime:</label></td><td>
+  <input type="text" id="ime" name="ime" value=""></td></tr><tr><td>
+  <label for="priimek">Priimek:</label></td><td>
+  <input type="text" id="priimek" name="priimek" value=""></td></tr><tr><td>
+  <label for="email">Email:</label></td><td>
+  <input type="text" id="email" name="email" value=""></td></tr><tr><td>
+  <label for="tel">Telefon:</label></td><td>
+  <input type="text" id="tel" name="tel" value="" oninput="onTelInput()"></td></tr><tr><td>
+  <span id="tel-status" ></span></tr></td><tr><td>
+  <label for="dav">Davčna:</label></td><td>
+  <input type="text" id="dav" name="dav" value="" oninput="onDavInput()"></td><tr><td>
+  <span id="dav-status" ></span></td></tr></table>
+  <input type="button" value="Posodobi podatke" onclick="posodobipodatke()">
+  <input type="button" value="Nazaj" onclick="nazaj()">
+</form> 
+
+<script src="spremenipodatke.js"></script>
+
+
+</article>
+
+<footer>Avtor: Žan Gostič</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RSO Spletni Avto servis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+</head>
+<body onload="obzagonu()">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<div class="flex-container">
+<header>
+  <h1>Spletni Avto servis</h1>
+</header>
+
+<nav class="nav">
+<div id="navigacija">
+<script type="text/javascript" src="insertlinks.js"></script>
+</div>
+</nav>
+
+<article class="article">
+<h2>Spletni avto servis</h2>
+<h3>Naročilo na servis</h3>
+<table id="weatherTable">
+  <thead>
+    <tr>
+      <th>Datum</th>
+      <th>Najvišja temperatura (°C)</th>
+      <th>Vreme</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+
+
+<form action="/index.html">
+<table><tr><td>
+  <label for="avtoser">Avtoservis:</label></td><td>
+  <select id="avtoser" name="avtoser" value="" onchange="avtoservisChanged(this.value)"></td></tr><tr><td>
+  <label for="pos">Poslovalnica:</label></td><td>
+  <select id="pos" name="pos" value="" onchange="poslovalnicaChanged(this.value)"></td></tr><tr><td>
+  <label for="voz">Vozilo:</label></td><td>
+  <select id="voz" name="voz" value=""></td></tr><tr><td>
+  <label for="stor">Storitev:</label></td><td>
+  <select id="stor" name="stor" value=""></td></tr><tr><td>
+  <label for="dat">Datum:</label></td><td>
+  <input type="date" id="dat" name="dat" value=""></td></tr><tr><td>
+  <label for="ura">Ura:</label></td><td>
+  <input type="time" id="ura" name="ura" value="" ></td><tr></table>
+  <input type="button" value="Naroči servis" onclick="narocilo()">
+  <input type="button" value="Nazaj" onclick="nazaj()">
+</form> 
+
+<script src="prijavaservis.js"></script>
+
+
+</article>
+
+<footer>Avtor: Žan Gostič</footer>
+</div>
+
+</body>
+</html>

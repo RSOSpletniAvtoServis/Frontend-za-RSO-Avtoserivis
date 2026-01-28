@@ -5,6 +5,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="stylesheet">
+
+<style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    button {
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body onload="obzagonu()">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -23,15 +42,24 @@
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3 id="naslov" name="naslov">Tukaj imate vse za avtoservis</h3>
 
+<h3>Pregled krajev</h3>
 
-<script src="index.js"></script>
-<script>
+<table id="krajTable">
+  <thead>
+    <tr>
+      <th>Naziv kraja</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+	  <th>Popravi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- rows inserted here -->
+  </tbody>
+</table>
 
-console.log("Vloga: ",localStorage.getItem("vloga"));
-console.log("UserID: ",localStorage.getItem("userID"));
-</script>
+<script src="kraj.js"></script>
 
 
 </article>

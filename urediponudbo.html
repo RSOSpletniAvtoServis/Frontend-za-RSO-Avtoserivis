@@ -17,22 +17,25 @@
 <nav class="nav">
 <div id="navigacija">
 <script type="text/javascript" src="insertlinks.js"></script>
-
 </div>
 </nav>
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3 id="naslov" name="naslov">Tukaj imate vse za avtoservis</h3>
+<h3>Spremeni ponudbo</h3>
+<form action="/index.html">
+<table><tr><td>
+  <label for="posl">Poslovalnica:</label></td><td>
+  <select id="posl" name="posl" value=""></td></tr><tr><td>
+  <label for="stor">Storitev:</label></td><td>
+  <select id="stor" name="stor" value=""></td></tr><tr><td>
+  <label for="aktiven">Aktiven:</label></td><td>
+  <input type="text" id="aktiven" name="aktiven" value=""></td></tr></table>
+  <input type="button" value="Posodobi ponudbo" onclick="posodobiponudbo()">
+  <input type="button" value="Nazaj" onclick="nazaj()">
+</form> 
 
-
-<script src="index.js"></script>
-<script>
-
-console.log("Vloga: ",localStorage.getItem("vloga"));
-console.log("UserID: ",localStorage.getItem("userID"));
-</script>
-
+<script src="urediponudbo.js"></script>
 
 </article>
 

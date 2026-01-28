@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RSO Spletni Avto servis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    button {
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body onload="obzagonu()">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<div class="flex-container">
+<header>
+  <h1>Spletni Avto servis</h1>
+</header>
+
+<nav class="nav">
+<div id="navigacija">
+<script type="text/javascript" src="insertlinks.js"></script>
+
+</div>
+</nav>
+
+<article class="article">
+<h2>Spletni avto servis</h2>
+<h3>Pregled Poslovalnic</h3>
+
+<table id="poslovalnicaTable">
+  <thead>
+    <tr>
+      <th>Naziv poslovalnice</th>
+	  <th>Naslov poslovalnice</th>
+	  <th>Telefon poslovalnice</th>
+	  <th>Email poslovalnice</th>
+	  <th>Kraj poslovalnice</th>
+	  <th>Aktivna</th>
+	  <th>Popravi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- rows inserted here -->
+  </tbody>
+</table>
+<script src="upravljajposlovalnice.js"></script>
+
+
+</article>
+
+<footer>Avtor: Žan Gostič</footer>
+</div>
+
+</body>
+</html>

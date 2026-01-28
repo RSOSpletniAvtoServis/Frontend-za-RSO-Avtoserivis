@@ -8,7 +8,7 @@
 </head>
 <body onload="obzagonu()">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="script.js"></script>
+<!--<script src="script.js"></script>-->
 <div class="flex-container">
 <header>
   <h1>Spletni Avto servis</h1>
@@ -23,15 +23,19 @@
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3 id="naslov" name="naslov">Tukaj imate vse za avtoservis</h3>
+<h3>Uredi Model</h3>
 
-
-<script src="index.js"></script>
-<script>
-
-console.log("Vloga: ",localStorage.getItem("vloga"));
-console.log("UserID: ",localStorage.getItem("userID"));
-</script>
+<form action="/index.html">
+  <table><tr><td>
+  <label for="znamka">Znamka:</label></td><td>
+  <select id="znamka" name="znamka"></select></td></tr><tr><td>
+  <label for="naziv">Naziv Modela:</label></td><td>
+  <input type="text" id="naziv" name="naziv" value=""></td></tr></table>
+  
+  <input type="button" value="Uredi model" onclick="uredimodel()">
+  <input type="button" value="Nazaj" onclick="nazajpregledmodelov()">
+</form> 
+<script type="text/javascript" src="uredimodel1.js"></script>
 
 
 </article>

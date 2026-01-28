@@ -22,19 +22,21 @@
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3>Prijava</h3>
+<h3>Spremeni geslo</h3>
 <form action="/index.html">
-  <table><tr><td>
-  <label for="uname">Username:</label></td><td>
-  <input type="text" id="uname" name="uname" value=""></td></tr><tr><td>
-  <label for="pass">Password:</label></td><td>
-  <input type="password" id="pass" name="pass" value=""></td></tr></table>
-  <input type="button" value="Prijava" onclick="prijava()">
+<table><tr><td>
+  <label for="tgeslo">Trenutno geslo:</label></td><td>
+  <input type="password" id="tgeslo" name="tgeslo" value=""></td></tr><tr><td>
+  <label for="ngeslo">Novo geslo:</label></td><td>
+  <input type="password" id="ngeslo" name="ngeslo" value="" oninput="onTelInput()"></td></tr><tr><td>
+  <label for="cgeslo">Ponovno novo geslo:</label></td><td>
+  <input type="password" id="cgeslo" name="cgeslo" value="" oninput="onTelInput()"></td></tr><tr><td>
+  <span id="ges-status" ></span></td></tr></table>
+  <input type="button" value="Spremeni geslo" onclick="spremenigeslo()">
   <input type="button" value="Nazaj" onclick="nazaj()">
 </form> 
 
-<script src="prijava.js"></script>
-
+<script src="spremenigeslo.js"></script>
 
 
 </article>

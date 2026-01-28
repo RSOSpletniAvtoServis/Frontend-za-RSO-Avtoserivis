@@ -23,15 +23,15 @@
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3 id="naslov" name="naslov">Tukaj imate vse za avtoservis</h3>
-
-
-<script src="index.js"></script>
-<script>
-
-console.log("Vloga: ",localStorage.getItem("vloga"));
-console.log("UserID: ",localStorage.getItem("userID"));
-</script>
+<h3>Dodaj znamko</h3>
+<form action="/index.html">
+  <table><tr><td>
+  <label for="naziv">Naziv znamke:</label></td><td>
+  <input type="text" id="naziv" name="naziv" value=""></td></tr></table>
+  <input type="button" value="Dodaj znamko" onclick="dodajZnamko()">
+  <input type="button" value="Nazaj" onclick="nazaj()">
+</form> 
+<script type="text/javascript" src="funkcije.js"></script>
 
 
 </article>

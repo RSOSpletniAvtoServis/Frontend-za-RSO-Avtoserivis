@@ -22,19 +22,24 @@
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3>Prijava</h3>
+<h3>Uredi zaposlenega</h3>
 <form action="/index.html">
-  <table><tr><td>
-  <label for="uname">Username:</label></td><td>
-  <input type="text" id="uname" name="uname" value=""></td></tr><tr><td>
-  <label for="pass">Password:</label></td><td>
-  <input type="password" id="pass" name="pass" value=""></td></tr></table>
-  <input type="button" value="Prijava" onclick="prijava()">
+<table><tr><td>
+  <label for="ime">Ime:</label></td><td>
+  <label id="ime" name="ime" value=""></td></tr><tr><td>
+  <label for="priimek">Priimek:</label></td><td>
+  <label id="priimek" name="priimek" value=""></td></tr><tr><td>
+  <label for="email">Email:</label></td><td>
+  <label id="email" name="email" value=""></td></tr><tr><td>
+  <label for="tel">Telefon:</label></td><td>
+  <label id="tel" name="tel" value=""></td></tr><tr><td>
+  <label for="pos">Poslovalnica:</label></td><td>
+  <select id="pos" name="pos" value=""></td></tr></table>
+  <input type="button" value="Posodobi zaposlenega" onclick="posodobizaposlenega()">
   <input type="button" value="Nazaj" onclick="nazaj()">
 </form> 
 
-<script src="prijava.js"></script>
-
+<script src="uredizaposlenega.js"></script>
 
 
 </article>

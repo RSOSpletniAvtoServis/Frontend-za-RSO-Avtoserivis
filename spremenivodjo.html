@@ -17,22 +17,21 @@
 <nav class="nav">
 <div id="navigacija">
 <script type="text/javascript" src="insertlinks.js"></script>
-
 </div>
 </nav>
 
 <article class="article">
 <h2>Spletni avto servis</h2>
-<h3 id="naslov" name="naslov">Tukaj imate vse za avtoservis</h3>
+<h3>Dodeli vodjo tennantu</h3>
+<form action="/index.html">
+<table><tr><td>
+  <label for="vodje">Vodja:</label></td><td>
+  <select id="vodje" name="vodje"></td></tr></table>
+  <input type="button" value="Dodeli vodjo" onclick="dodeliVodjo()">
+  <input type="button" value="Nazaj" onclick="nazaj()">
+</form> 
 
-
-<script src="index.js"></script>
-<script>
-
-console.log("Vloga: ",localStorage.getItem("vloga"));
-console.log("UserID: ",localStorage.getItem("userID"));
-</script>
-
+<script src="spremenivodjo.js"></script>
 
 </article>
 
