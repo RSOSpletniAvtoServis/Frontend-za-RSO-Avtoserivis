@@ -6,7 +6,7 @@ WORKDIR /var/www/html
 
 # Copy your website files to the container
 COPY . /var/www/html/
-
+COPY insertLinks.js /var/www/html/
 # Enable Apache mod_rewrite if needed
 #RUN a2enmod rewrite
 
