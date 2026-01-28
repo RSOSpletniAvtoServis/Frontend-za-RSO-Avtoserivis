@@ -8,7 +8,7 @@ WORKDIR /var/www/html
 COPY . /var/www/html/
 
 # Enable Apache mod_rewrite if needed
-RUN a2enmod rewrite
+#RUN a2enmod rewrite
 
 # Set proper permissions
 RUN chown -R www-data:www-data /var/www/html \
