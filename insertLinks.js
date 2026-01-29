@@ -1,8 +1,8 @@
 
-localStorage.setItem("UpoPri","http://localhost:1000/");
-localStorage.setItem("AdmVoz","http://localhost:2000/");
-localStorage.setItem("PosZap","http://localhost:3000/");
-localStorage.setItem("NarOceSpo","http://localhost:4000/");
+localStorage.setItem("UpoPri","http://34.44.205.13/"); //"http://localhost:1000/");
+localStorage.setItem("AdmVoz","http://34.31.163.62/"); //"http://localhost:2000/");
+localStorage.setItem("PosZap","http://136.111.146.129/"); //"http://localhost:3000/");
+localStorage.setItem("NarOceSpo","http://34.68.246.200/"); //"http://localhost:4000/");
 const div = document.getElementById("navigacija");
 const ul = document.createElement("ul");
 
