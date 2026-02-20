@@ -28,4 +28,4 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/rsofrontend:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/rsosceleton:latest
